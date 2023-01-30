@@ -1,10 +1,10 @@
 import React from 'react'
-
-const Square = (props) => {
-    console.log(props);
+import "./style.css";
+const Square = ({value,onClick}) => {
+    //console.log(props);
   return (
    <>
-    <button type='button'>{props.value}</button>
+    <button type='button' onClick={onClick} className='row-btn'>{value}</button>
    </>
   )
 }
