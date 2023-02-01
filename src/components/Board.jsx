@@ -70,48 +70,49 @@ const Board = () => {
       </div> */}
 
      
-      <div className='container '>
+     
      <div className='text-center mt-2'>
      <h3>TIC TAC TOE</h3>
 
      </div>
-       
+          
       <div className='row mt-5'>
 
-      <div className='col col-md-8 col-lg-6 col-12 '>
-      <div className='row-container ml-2'>
-       
-            {renderSquare(0)}
-            {renderSquare(1)}
-            {renderSquare(2)}
-          </div>
-          <div className='row-container ml-2'>
-            {renderSquare(3)}
-            {renderSquare(4)}
-            {renderSquare(5)}
-          </div>
-          <div className='row-container ml-2'>
-            {renderSquare(6)}
-            {renderSquare(7)}
-            {renderSquare(8)}
-
-          </div>
-          <div className='text-center mt-2 '>
-          <h4 className='text-info'><strong><i>{message}</i></strong></h4>
-
-     </div>
-        
-      </div> 
-      <div className='col col-md-4 col-lg-6 col-12  '>
-      <div className='ml-5 mt-2'>
-      <PlayerHistory  history={history} moveTo={moveTo} currentMove={currentMove}/>
-      </div>
-      
+<div className='col col-md-6 col-lg-6 col-12 '>
+<div className='row-container ml-2'>
+ 
+      {renderSquare(0)}
+      {renderSquare(1)}
+      {renderSquare(2)}
     </div>
+    <div className='row-container ml-2'>
+      {renderSquare(3)}
+      {renderSquare(4)}
+      {renderSquare(5)}
+    </div>
+    <div className='row-container ml-2'>
+      {renderSquare(6)}
+      {renderSquare(7)}
+      {renderSquare(8)}
 
-      </div>
+    </div>
+    <div className='text-center mt-2 '>
+    <h4 className='text-info'><strong><i>{message}</i></strong></h4>
 
-      </div>
+</div>
+  
+</div> 
+<div className='col col-md-6 col-lg-6 col-12  '>
+<div className='ml-5 mt-2'>
+<PlayerHistory  history={history} moveTo={moveTo} currentMove={currentMove}/>
+</div>
+
+</div>
+
+</div>
+     
+
+   
     </>
   )
 }
